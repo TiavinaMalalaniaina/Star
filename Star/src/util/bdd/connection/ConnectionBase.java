@@ -52,6 +52,7 @@ public class ConnectionBase {
         if (get_co()==null) {
             throw new Exception("Erreur de connexion: impossible de fermer la connexion puisqu'elle n'est pas encore ouverte");
         }
+        get_stmt().close();
         get_co().close();
         set_co(null);
     }
