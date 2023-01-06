@@ -13,6 +13,13 @@ public class Ingredient extends BddObject {
 	public Ingredient() {
 		super("ingredient", "idIngredient");
 	}
+	public Ingredient(String idIngredient, String idProductFinished, String idProductUsed, double quantity) {
+		super("ingredient", "idIngredient");
+		setIdIngredient(idIngredient);
+		setIdProductFinished(idProductFinished);
+		setIdProductUsed(idProductUsed);
+		setQuantity(quantity);
+	}
 	
 //	GETTER
 	public String getIdIngredient() {

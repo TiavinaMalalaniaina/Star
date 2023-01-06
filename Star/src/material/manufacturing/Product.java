@@ -13,6 +13,13 @@ public class Product extends BddObject {
 	public Product() {
 		super("product", "idProduct");
 	}
+	public Product(String idProduct, String productName, String isPrimary, double unitPrice) {
+		super("product", "idProduct");
+		setIdProduct(idProduct);
+		setProductName(productName);
+		setIsPrimary(isPrimary);
+		setUnitPrice(unitPrice);
+	}
 
 //	GETTER
 	public String getIdProduct() {
